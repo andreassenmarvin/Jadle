@@ -1,11 +1,9 @@
 package dao;
 
-import dao.RestaurantDao;
 import models.Restaurant;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
-
 import java.util.List;
 
 public class Sql2oRestaurantDao implements RestaurantDao { //don't forget to shake hands with your interface!
