@@ -96,6 +96,7 @@ public class RestaurantTest {
         return new Restaurant("Dracula", "123 Pennsylvania", "01234", "123-456-789");
     }
 
+    //helper
     public Restaurant setupRestaurant (){
         return new Restaurant("Dracula", "123 Pennsylvania", "01234", "123-456-789", "http://dracula.com", "eat@dracula.com");
     }

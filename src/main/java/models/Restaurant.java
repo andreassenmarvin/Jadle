@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Objects;
+
 public class Restaurant {
     private String name;
     private String address;
@@ -81,5 +83,24 @@ public class Restaurant {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Restaurant)) return false;
+        Restaurant that = (Restaurant) o;
+        return id == that.id &&
+                Objects.equals(name, that.name) &&
+                Objects.equals(address, that.address) &&
+                Objects.equals(zipcode, that.zipcode) &&
+                Objects.equals(phone, that.phone) &&
+                Objects.equals(website, that.website) &&
+                Objects.equals(email, that.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, address, zipcode, phone, website, email, id);
     }
 }

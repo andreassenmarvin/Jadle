@@ -75,6 +75,7 @@ public class ReviewTest {
         assertEquals(5, testReview.getId());
     }
 
+    //helper
     public Review setupReview (){
         return new Review("Satisfactory", "Chris", 4, 1);
     }

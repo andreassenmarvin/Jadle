@@ -35,7 +35,7 @@ public class FoodtypeTest {
         testFoodtype.setId(5);
         assertEquals(5, testFoodtype.getId());
     }
-
+    //helper
     public Foodtype setupFoodtype(){
         return new Foodtype("dessert");
     }
